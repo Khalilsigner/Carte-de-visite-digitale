@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carte de visite digitale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="vendor/qrcode.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="wrap" id="publicView">
+  <noscript><p style="text-align:center;padding:24px">Veuillez activer JavaScript pour afficher la carte.</p></noscript>
+</div>
+
+<button class="fab" id="fab" onclick="openEditor()" aria-label="Modifier la carte">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+</button>
+
+<div id="editor">
+  <div class="panel">
+    <h2>Modifier ma carte</h2>
+    <div class="tabs">
+      <div class="tab active" data-tab="profil">Profil</div>
+      <div class="tab" data-tab="social">Réseaux</div>
+      <div class="tab" data-tab="liens">Liens</div>
+      <div class="tab" data-tab="services">Services</div>
+      <div class="tab" data-tab="apparence">Apparence</div>
+    </div>
+
+    <div class="pane active" id="pane-profil">
+      <div class="field photo-field">
+        <label>Photo de profil</label>
+        <div class="photo-picker">
+          <div class="photo-avatar" id="photoPreview"><span></span></div>
+          <div class="photo-controls">
+            <label class="photo-btn" for="f-photo">Choisir une photo</label>
+            <input type="file" id="f-photo" accept="image/*" onchange="pickPhoto(this)" hidden>
+            <button type="button" class="photo-btn remove" id="photoRemove" onclick="removePhoto()" style="display:none">Supprimer</button>
+          </div>
+        </div>
+      </div>
+      <div class="field"><label>Prénom</label><input id="f-firstName"></div>
+      <div class="field"><label>Nom</label><input id="f-lastName"></div>
+      <div class="field"><label>Fonction</label><input id="f-jobTitle"></div>
+      <div class="field"><label>Entreprise</label><input id="f-companyName"></div>
+      <div class="field"><label>Biographie</label><textarea id="f-bio"></textarea></div>
+      <div class="field"><label>Téléphone</label><input id="f-phone"></div>
+      <div class="field"><label>WhatsApp (format international, ex: 221771234567)</label><input id="f-whatsapp"></div>
+      <div class="field"><label>E-mail</label><input id="f-email"></div>
+      <div class="field"><label>Adresse</label><input id="f-address"></div>
+      <div class="field"><label>Site web</label><input id="f-website"></div>
+    </div>
+
+    <div class="pane" id="pane-social">
+      <div id="socialList"></div>
+      <button class="add-btn" onclick="addSocial()">+ Ajouter un réseau social</button>
+    </div>
+
+    <div class="pane" id="pane-liens">
+      <div id="linkList"></div>
+      <button class="add-btn" onclick="addLink()">+ Ajouter un lien</button>
+    </div>
+
+    <div class="pane" id="pane-services">
+      <div id="serviceList"></div>
+      <button class="add-btn" onclick="addService()">+ Ajouter un service</button>
+    </div>
+
+    <div class="pane" id="pane-apparence">
+      <div class="field color"><label>Couleur principale</label><input type="color" id="f-primary"></div>
+      <div class="field color"><label>Couleur secondaire</label><input type="color" id="f-warm"></div>
+    </div>
+
+    <div class="panel-actions">
+      <button class="close-btn" onclick="exportCardData()" title="Générer card-data.js pour publier la carte">Exporter</button>
+      <button class="close-btn" onclick="closeEditor()">Annuler</button>
+      <button class="primary-btn" onclick="saveCard()">Enregistrer</button>
+    </div>
+  </div>
+</div>
+
+<script src="card-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
