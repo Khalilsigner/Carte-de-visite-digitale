@@ -8,7 +8,7 @@ Carte de visite digitale avec **QR code** — site 100 % statique (HTML / CSS / 
 2. Sur GitHub : **Settings → Pages → Source : *Deploy from a branch*** → branche `main` → dossier `/ (root)` → **Save**.
 3. Votre carte est en ligne à :
    `https://<votre-pseudo>.github.io/<nom-du-depot>/`
-   *(ex. : `https://khalilsigner.github.io/7MAKSACOD-PC/`)*
+   *(ex. : `https://khalilsigner.github.io/Carte-de-visite-digitale/`)*
 
 ## 📱 Le QR code
 

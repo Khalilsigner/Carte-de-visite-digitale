@@ -13,7 +13,7 @@ const defaultState={
 const published=window.PUBLIC_CARD||null;
 const IS_PUBLIC=typeof location!=='undefined'&&(/[?&]v=public(&|$)/.test(location.search)||location.hash==='#public');
 const isLocal=typeof location!=='undefined'&&/^(file:|https?:\/\/(localhost|127\.0\.0\.1|0\.0\.0\.0))/.test(location.href);
-const PUBLIC_URL=!isLocal&&typeof location!=='undefined'?(location.origin+location.pathname):'https://khalilsigner.github.io/7MAKSACOD-PC/';
+const PUBLIC_URL=!isLocal&&typeof location!=='undefined'?(location.origin+location.pathname):'https://khalilsigner.github.io/Carte-de-visite-digitale/';
 const QR_TEXT=PUBLIC_URL?PUBLIC_URL+'?v=public':vcard();
 let state=defaultState;
 try{
