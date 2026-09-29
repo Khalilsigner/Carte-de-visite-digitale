@@ -232,6 +232,7 @@ function saveCard(){
   collectState();
   try{localStorage.setItem('digitalCard',JSON.stringify(state));}catch(e){}
   closeEditor();render();
+  if(!IS_PUBLIC){const h=document.getElementById('publishHint');if(h)h.style.display='flex';}
 }
 function exportCardData(){
   collectState();

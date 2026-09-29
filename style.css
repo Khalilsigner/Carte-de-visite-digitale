@@ -40,6 +40,9 @@ h1,h2,h3{font-family:'Space Grotesk',sans-serif;margin:0}
 .ghost-btn{background:transparent;border:1px solid var(--line);color:var(--text);border-radius:999px;padding:9px 16px;font-size:13px;cursor:pointer;font-family:Inter}
 .fab{position:fixed;bottom:22px;right:18px;bottom:calc(22px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:50%;background:var(--primary);border:none;color:#06140D;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px rgba(47,191,136,.35)}
 .fab svg{width:22px;height:22px}
+#publishHint{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 36px);background:var(--surface);border:1px solid var(--primary);color:var(--text);border-radius:12px;padding:10px 14px;display:none;align-items:center;gap:12px;font-size:13px;z-index:30;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#publishHint code{background:var(--surface-2);padding:2px 6px;border-radius:5px;font-size:12px}
+#publishHint button{background:var(--primary);color:#06140D;border:none;border-radius:999px;padding:6px 12px;font-weight:600;cursor:pointer;font-family:Inter;font-size:12px;flex-shrink:0}
 
 /* Editor */
 #editor{position:fixed;inset:0;background:rgba(4,8,6,.7);display:none;z-index:20;padding:0}
