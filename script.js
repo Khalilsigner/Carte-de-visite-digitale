@@ -232,7 +232,10 @@ function saveCard(){
   collectState();
   try{localStorage.setItem('digitalCard',JSON.stringify(state));}catch(e){}
   closeEditor();render();
-  if(!IS_PUBLIC){const h=document.getElementById('publishHint');if(h)h.style.display='flex';}
+  if(!IS_PUBLIC){
+    exportCardData(); // télécharge automatiquement card-data.js pour la publication
+    const h=document.getElementById('publishHint');if(h)h.style.display='flex';
+  }
 }
 function exportCardData(){
   collectState();

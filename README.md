@@ -17,14 +17,13 @@ Carte de visite digitale avec **QR code** — site 100 % statique (HTML / CSS / 
 - La version publique est reconnue grâce à `?v=public` ajoutée à l'URL.
 - ⚠️ Si le site n'est pas encore en ligne, l'application bascule automatiquement sur un QR vCard (les coordonnées directement scannables) pour rester fonctionnelle hors-ligne.
 
-## ✏️ Mettre à jour la carte publique
+## ✏️ Mettre à jour la carte publique (2 clics)
 
-1. Ouvrez `index.html` → **Modifier ma carte** → enregistrez vos modifications.
-2. Cliquez sur **Exporter** : vous téléchargez `card-data.js`.
-3. **Remplacez** le fichier `card-data.js` du projet par celui téléchargé.
-4. **Double-cliquez sur `publier.bat`** : commit + push automatiques sur GitHub.
-   *(ou à la main : `git add .` → `git commit -m "Mise à jour carte"` → `git push`)*
-5. Le site public est actualisé après 1 à 2 minutes.
+1. Ouvrez `index.html` → **Modifier ma carte** → modifiez vos infos → **Enregistrer**
+   *(le fichier `card-data.js` se télécharge automatiquement)*
+2. **Double-cliquez sur `publier.bat`** dans le dossier du projet
+   *(il copie le fichier téléchargé et envoie tout sur GitHub automatiquement)*
+3. Attendez 1 à 2 minutes, puis rescannez le QR code.
 
 > 💡 Les modifications faites localement ne sont visibles que sur **votre** navigateur (localStorage). Pour que les visiteurs les voient, il faut toujours exporter + publier.
 
