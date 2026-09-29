@@ -22,8 +22,9 @@ Carte de visite digitale avec **QR code** — site 100 % statique (HTML / CSS / 
 1. Ouvrez `index.html` → **Modifier ma carte** → enregistrez vos modifications.
 2. Cliquez sur **Exporter** : vous téléchargez `card-data.js`.
 3. **Remplacez** le fichier `card-data.js` du projet par celui téléchargé.
-4. Publiez : `git add .` → `git commit -m "Mise à jour carte"` → `git push`.
-5. Le site public est actualisé en quelques secondes.
+4. **Double-cliquez sur `publier.bat`** : commit + push automatiques sur GitHub.
+   *(ou à la main : `git add .` → `git commit -m "Mise à jour carte"` → `git push`)*
+5. Le site public est actualisé après 1 à 2 minutes.
 
 > 💡 Les modifications faites localement ne sont visibles que sur **votre** navigateur (localStorage). Pour que les visiteurs les voient, il faut toujours exporter + publier.
 

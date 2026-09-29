@@ -84,8 +84,15 @@
 </div>
 
 <div id="publishHint">
-  <span>Carte enregistrée localement. Pour la publier : cliquez <b>Exporter</b> puis remplacez <code>card-data.js</code> sur GitHub.</span>
-  <button onclick="document.getElementById('publishHint').style.display='none'">OK</button>
+  <span>
+    <b>Bien enregistré sur votre ordinateur ! ✅</b><br>
+    Pour que les visiteurs le voient, 2 étapes :
+  </span>
+  <ol>
+    <li>Cliquez sur <b>Exporter</b>, puis remplacez le fichier <code>card-data.js</code> du dossier projet</li>
+    <li>Double-cliquez sur <b><code>publier.bat</code></b> → tout est envoyé sur GitHub</li>
+  </ol>
+  <button onclick="document.getElementById('publishHint').style.display='none'">Compris</button>
 </div>
 
 <script src="card-data.js"></script>
