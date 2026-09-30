@@ -1,38 +1,39 @@
-// ============================================================
-// Carte de visite digitale — DONNÉES PUBLIQUES (affichées aux visiteurs)
-// ------------------------------------------------------------
-// Ce fichier est lu au chargement de la carte : c'est ce que verront
-// les personnes qui scannent votre QR code.
-//
-// COMMENT METTRE À JOUR :
-//  1. Ouvrez index.html → « Modifier ma carte » → modifiez vos infos
-//  2. Cliquez sur « Exporter » : vous téléchargez un nouveau card-data.js
-//  3. Remplacez le contenu de CE fichier par celui téléchargé
-//  4. Publiez le changement sur GitHub (git add / commit / push)
-//     → le site public est mis à jour automatiquement
-// ============================================================
+// Carte de visite digitale — données publiques
+// Remplacez le contenu de card-data.js par ce fichier, puis republiez le site (git push).
 window.PUBLIC_CARD={
-  "firstName": "Ibrahima",
-  "lastName": "Konta",
-  "jobTitle": "Fondateur & Directeur",
-  "companyName": "YONKO BUSINESS",
-  "bio": "Agence digitale — web design, branding, formation professionnelle et équipement technologique.",
-  "phone": "+221771234567",
-  "whatsapp": "221771234567",
-  "email": "contact@yonkobusiness.sn",
-  "address": "Thiès, Sénégal",
-  "website": "https://yonkobusiness.sn",
+  "firstName": "lil",
+  "lastName": "Ndiaye",
+  "jobTitle": "President ",
+  "companyName": "HDN",
+  "bio": "Cadre collectfs",
+  "phone": "765355808",
+  "whatsapp": "+1 (438) 282-8724",
+  "email": "abdoulayendiaye@gmail.com",
+  "address": "Canada",
+  "website": "https://hdn.sn",
   "photo": "",
-  "primary": "#2FBF88",
-  "warm": "#E3A857",
+  "primary": "#2fbf88",
+  "warm": "#e3a857",
   "social": [
-    { "platform": "linkedin", "url": "https://linkedin.com" },
-    { "platform": "instagram", "url": "https://instagram.com" }
+    {
+      "platform": "linkedin",
+      "url": "https://linkedin.com"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com"
+    }
   ],
   "links": [
-    { "label": "Portfolio", "url": "https://yonkobusiness.sn/portfolio" }
+    {
+      "label": "Portfolio",
+      "url": "https://yonkobusiness.sn/portfolio"
+    }
   ],
   "services": [
-    { "title": "Création de sites web", "description": "Sites vitrines et plateformes sur mesure." }
+    {
+      "title": "Création de sites web",
+      "description": "Sites vitrines et plateformes sur mesure."
+    }
   ]
 };
